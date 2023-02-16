@@ -11,6 +11,8 @@
 		4467C23D299D71B700496AC5 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C23C299D71B700496AC5 /* DeviceController.swift */; };
 		4467C240299D750A00496AC5 /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C23F299D750A00496AC5 /* DeviceTableViewController.swift */; };
 		4467C243299D75DB00496AC5 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C242299D75DB00496AC5 /* DeviceTableViewCell.swift */; };
+		4467C251299ED34500496AC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C250299ED34500496AC5 /* Constants.swift */; };
+		4467C253299ED5C500496AC5 /* ToggleAllDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C252299ED5C500496AC5 /* ToggleAllDevicesViewController.swift */; };
 		F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F027729ACE0021C4E0 /* AppDelegate.swift */; };
 		F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */; };
 		F78B15F827729ACE0021C4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78B15F627729ACE0021C4E0 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		4467C23C299D71B700496AC5 /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
 		4467C23F299D750A00496AC5 /* DeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewController.swift; sourceTree = "<group>"; };
 		4467C242299D75DB00496AC5 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		4467C250299ED34500496AC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4467C252299ED5C500496AC5 /* ToggleAllDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleAllDevicesViewController.swift; sourceTree = "<group>"; };
 		F78B15ED27729ACE0021C4E0 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78B15F027729ACE0021C4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4467C23F299D750A00496AC5 /* DeviceTableViewController.swift */,
+				4467C252299ED5C500496AC5 /* ToggleAllDevicesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */,
 				F78B15F927729AD20021C4E0 /* Assets.xcassets */,
 				F78B15FE27729AD20021C4E0 /* Info.plist */,
+				4467C250299ED34500496AC5 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 				4467C243299D75DB00496AC5 /* DeviceTableViewCell.swift in Sources */,
 				4467C240299D750A00496AC5 /* DeviceTableViewController.swift in Sources */,
 				4467C23D299D71B700496AC5 /* DeviceController.swift in Sources */,
+				4467C253299ED5C500496AC5 /* ToggleAllDevicesViewController.swift in Sources */,
+				4467C251299ED34500496AC5 /* Constants.swift in Sources */,
 				F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */,
 				F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */,
 			);
