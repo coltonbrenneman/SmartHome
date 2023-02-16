@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4467C23A299D70C600496AC5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C239299D70C600496AC5 /* Device.swift */; };
+		4467C23D299D71B700496AC5 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C23C299D71B700496AC5 /* DeviceController.swift */; };
+		4467C240299D750A00496AC5 /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C23F299D750A00496AC5 /* DeviceTableViewController.swift */; };
+		4467C243299D75DB00496AC5 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467C242299D75DB00496AC5 /* DeviceTableViewCell.swift */; };
 		F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F027729ACE0021C4E0 /* AppDelegate.swift */; };
 		F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */; };
 		F78B15F827729ACE0021C4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78B15F627729ACE0021C4E0 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		4467C239299D70C600496AC5 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4467C23C299D71B700496AC5 /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
+		4467C23F299D750A00496AC5 /* DeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewController.swift; sourceTree = "<group>"; };
+		4467C242299D75DB00496AC5 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		F78B15ED27729ACE0021C4E0 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78B15F027729ACE0021C4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +60,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4467C23E299D71CC00496AC5 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				4467C23C299D71B700496AC5 /* DeviceController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		4467C241299D751800496AC5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4467C23F299D750A00496AC5 /* DeviceTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4467C244299D75E100496AC5 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4467C242299D75DB00496AC5 /* DeviceTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		F78B15E427729ACE0021C4E0 = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +105,10 @@
 			children = (
 				41D325E1283685D800597C30 /* Storyboards */,
 				F78B160D2772A2030021C4E0 /* Resources */,
+				4467C23E299D71CC00496AC5 /* ModelController */,
 				4467C23B299D70CB00496AC5 /* Model */,
+				4467C241299D751800496AC5 /* ViewController */,
+				4467C244299D75E100496AC5 /* CustomCell */,
 			);
 			path = SmartHome;
 			sourceTree = "<group>";
@@ -163,6 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4467C23A299D70C600496AC5 /* Device.swift in Sources */,
+				4467C243299D75DB00496AC5 /* DeviceTableViewCell.swift in Sources */,
+				4467C240299D750A00496AC5 /* DeviceTableViewController.swift in Sources */,
+				4467C23D299D71B700496AC5 /* DeviceController.swift in Sources */,
 				F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */,
 				F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */,
 			);

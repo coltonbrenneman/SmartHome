@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="men-hU-AFX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,13 +11,13 @@
         <!--Smart Home-->
         <scene sceneID="nBL-vG-rqu">
             <objects>
-                <tableViewController id="ZKi-8C-UHk" sceneMemberID="viewController">
+                <tableViewController id="ZKi-8C-UHk" customClass="DeviceTableViewController" customModule="SmartHome" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="jDu-Ft-yXZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceCell" rowHeight="61" id="fOJ-a2-81i">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceCell" rowHeight="61" id="fOJ-a2-81i" customClass="DeviceTableViewCell" customModule="SmartHome" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="414" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fOJ-a2-81i" id="62K-N9-Awm">
@@ -35,6 +35,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SvX-nD-4NI">
                                                     <rect key="frame" x="309" y="0.0" width="51" height="23"/>
+                                                    <connections>
+                                                        <action selector="deviceToggled:" destination="fOJ-a2-81i" eventType="valueChanged" id="oLU-cm-tqn"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
@@ -46,6 +49,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="GYx-cf-TPt" secondAttribute="trailing" constant="8" id="jTC-s5-Ec8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="deviceNameLabel" destination="m4E-mc-Anv" id="a9W-n4-uIy"/>
+                                    <outlet property="deviceToggleSwitch" destination="SvX-nD-4NI" id="GEj-FI-VFc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -54,10 +61,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Smart Home" id="EXK-MQ-1ew">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ro9-Dl-yGb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ro9-Dl-yGb">
+                            <connections>
+                                <action selector="addDeviceButton:" destination="2lH-ig-vj1" id="fow-v0-6GS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZ8-kz-Zjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2lH-ig-vj1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1556.521739130435" y="-21.428571428571427"/>
         </scene>
